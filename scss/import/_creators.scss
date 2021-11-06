@@ -57,3 +57,35 @@
       }
    }
 }
+
+@media screen and (max-width: 768px) {
+   .creators {
+      .creators__container {
+         .creators__grid {
+            grid-template-columns: 1fr;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 600px) {
+   .creators {
+      .creators__container {
+         .creators__grid {
+            .creator__card {
+               .creator__header {
+                  flex-direction: column;
+                  text-align: center;
+                  img {
+                     margin: 0;
+                     margin-bottom: 1.25rem; /* 20px */
+                  }
+               }
+               .creator__testimonial {
+                  text-align: center;
+               }
+            }
+         }
+      }
+   }
+}

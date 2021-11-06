@@ -56,3 +56,30 @@
       }
    }
 }
+
+@media screen and (max-width: 768px) {
+   .footer__menu {
+      .footer__container {
+         .footer__grid {
+            grid-template-columns: repeat(3, 1fr);
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 600px) {
+   .footer__flex {
+      flex-direction: column;
+      .references__link {
+         margin-top: 1.25rem; /* 20px */
+      }
+   }
+
+   .footer__menu {
+      .footer__container {
+         .footer__grid {
+            grid-template-columns: 1fr;
+         }
+      }
+   }
+}

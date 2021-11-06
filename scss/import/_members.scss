@@ -47,3 +47,9 @@
       }
    }
 }
+
+@media screen and (max-width: 768px) {
+   .info__general {
+      grid-template-columns: 1fr;
+   }
+}
