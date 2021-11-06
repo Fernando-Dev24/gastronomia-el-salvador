@@ -1,0 +1,211 @@
+.food {
+   width: 100%;
+   border-bottom: 3px solid #12121241;
+   &.no-border {
+      border: none;
+   }
+   h2, h3 {
+      color: $blueColor;
+   }
+   .food__header {
+      margin: 3.75rem auto; /* 60px auto */
+      h2 {
+         margin-bottom: 0.625rem; /* 10px */
+         font-size: 1.875rem; /* 30px */
+         color: $blueColor;
+      }
+      .food__banner {
+         position: relative;
+         width: 100%;
+         max-width: 100%;
+         height: 40vh;
+         max-height: 40vh;
+         border-radius: 10px;
+         &#empanadas {
+            background: url(../img/banners/empanada-platano.jpg) no-repeat center;
+            background-size: cover;
+         }
+         &#riguas {
+            background: url(../img/banners/Imagen2.jpg) no-repeat center;
+            background-size: cover;
+         }
+         &#atol-shuco {
+            background: url(../img/banners/atol-shuco2.jpg) no-repeat center;
+            background-size: cover;
+         }
+         &#pupusas {
+            background: url(../img/banners/banner-pupusas.jpg) no-repeat bottom;
+            background-size: cover;
+         }
+         &#tamales {
+            background: url(../img/banners/banner-tameles.jpg) no-repeat center;
+            background-size: cover;
+         }
+         &#pastelitos {
+            background: url(../img/banners/banner-pastelitos.jpg) no-repeat center;
+            background-size: cover;
+         }
+         &#enchiladas {
+            background: url(../img/banners/banner-enchilada.jpg) no-repeat center;
+            background-size: cover;
+         }
+         &#yuca-frita {
+            background: url(../img/banners/banners-yuca-frita.jpg) no-repeat center;
+            background-size: cover;
+         }
+         &#nuegados {
+            background: url(../img/banners/banner-nuegado.jpg) no-repeat center;
+            background-size: cover;
+         }
+         &#arroz-leche {
+            background: url(../img/banners/banner-arroz-leche.jpg) no-repeat center;
+            background-size: cover;
+         }
+         &#torrejas {
+            background: url(../img/banners/banner-torrejas.jpg) no-repeat center;
+            background-size: cover;
+         }
+         &#tres-leches {
+            background: url(../img/banners/banner-tres-leche.jpg) no-repeat center;
+            background-size: cover;
+         }
+         &#sopa-pata {
+            background: url(../img/banners/banner-sopa-de-pata.jpg) no-repeat center;
+            background-size: cover;
+         }
+         &#carne {
+            background: url(../img/banners/banner-churrasco.jpg) no-repeat center;
+            background-size: cover;
+         }
+         &#mariscada {
+            background: url(../img/banners/banner-mariscada.jpg) no-repeat center;
+            background-size: cover;
+         }
+
+         .banner__cite {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding: 0.625rem 1.25rem; /* 10px 20px */
+            font-size: 0.875rem; /* 14px */
+            border-radius: 10px 0 5px 0;
+            color: #121212;
+            background: #fff;
+         }
+      }
+   }
+
+   .food__general-info {
+      width: 100%;
+      margin-bottom: 3.75rem; /* 60px */
+      .food__general-grid {
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         gap: 1.25rem;
+         margin-top: 1.25rem; /* 20px */
+         .general__info {
+            padding: 2.5rem; /* 40px */
+            border-radius: 10px;
+            box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+            background: #FFF;
+            line-height: 1.6875rem; /* 27px */
+            font-size: 1rem; /* 16px */
+         }
+         &.grid-1 {
+            grid-template-columns: 1fr;
+         }
+      }
+   }
+
+   .food__ingredients {
+      display: grid;
+      grid-template-columns: 40% 60%;
+      gap: 1.25rem; /* 20px */
+      margin-bottom: 3.75rem; /* 60px */
+      padding: 60px; /* 40px */
+      border-radius: 10px;
+      box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+      background: #fff;
+      .food__img {
+         position: relative;
+         height: 100%;
+         img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+         }
+         .food__cite {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding: 0.625rem 1.25rem; /* 10px 20px */
+            font-size: 0.875rem; /* 14px */
+            border-radius: 10px 0 5px 0;
+            color: #121212;
+            background: #fff;
+         }
+      }
+      .ingredients__grid {
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         gap: 1.25rem; /* 20px */
+         margin-top: 1.25rem; /* 20px */
+         p {
+            position: relative;
+            padding: 2.5rem 30px; /* 40px 30px */
+            font-size: 1.25rem; /* 20px */
+            border-radius: 0 20px 0 0;
+            color: #fff;
+            background: $blueColor;
+            &::after {
+               content: "";
+               position: absolute;
+               bottom: 0;
+               left: 0;
+               width: 100%;
+               height: 0.625rem; /* 10px */
+               background: rgba($color: #FFFFFF, $alpha: .8);
+            }
+         }
+      }
+   }
+
+   /* Foot step */
+   .food__step {
+      h2 {
+         font-size: 1.875rem; /* 30px */
+         color: $blueColor;
+      }
+      .steps__grid {
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         gap: 1.25rem; /* 20px */
+         margin-top: 1.25rem; /* 20px */
+         &.mb {
+            margin-bottom: 2.5rem; /* 20px */
+         }
+         .step {
+            padding: 2.5rem; /* 40px */
+            border-radius: 10px;
+            box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+            background: #FFF;
+            transition: all .3s ease;
+            h3, p {
+               pointer-events: none;
+            }
+            h3 {
+               margin-bottom: 0.625rem; /* 10px */
+               font-size: 1.25rem; /* 20px */
+            }
+            p {
+               margin: 0.625rem 0; /* 10px */
+               line-height: 1.6875rem; /* 27px */
+            }
+            &:hover {
+               transform: scale(1.03);
+               box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.1), 0px 2px 6px rgba(0, 0, 0, 0.1), 0px 0px 1px rgba(0, 0, 0, 0.1);
+            }
+         }
+      }
+   }
+}
